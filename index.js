@@ -15,11 +15,14 @@ function logWhisper(string) {
 }
 
 function sayHiToGrandma(string) {
-  if (string = 'hello') {
-    console.log('I can\'t hear you!');
-  } else if (string = 'HELLO') {
-    console.log('YES INDEED!');
-  } else if (string = 'I love you, Grandma.') {
-    return 'I love you, too.'
+  switch(string) {
+    case 'hello':
+      return 'I can\'t hear you!';
+      break;
+    case 'HELLO':
+      return 'YES INDEED!';
+      break;
+    case 'I love you, Grandma.':
+      return 'I love you, too.';
   }
 }
