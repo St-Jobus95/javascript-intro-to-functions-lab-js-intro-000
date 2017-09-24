@@ -15,17 +15,11 @@ function logWhisper(string) {
 }
 
 function sayHiToGrandma(string) {
-  switch(string) {
-    case string.toLowerCase:
-      return 'I can\'t hear you!';
-      break;
-    case string.toUpperCase:
-      return 'YES INDEED!';
-      break;
-    case 'I love you, Grandma.':
-      return 'I love you, too.';
-      break;
-      default:
-      return undefined;
-    }
+  if (string = 'hello') {
+    return 'I can\'t hear you!';
+  } else if (string = 'HELLO') {
+    return 'YES INDEED!';
+  } else if (string = 'I love you, Grandma.') {
+    return 'I love you, too.';
   }
+}
